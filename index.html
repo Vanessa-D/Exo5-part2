@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulaire#2</title>
+        <style>
+            form
+            {
+                background-color: #bd98a8;
+                height: 340px;
+                width: 28%;
+                border-radius: 5px;
+                box-shadow: 3.5px 3.5px;
+                padding-top: 1px;
+                padding-left: 10px;
+            }
+
+            label
+            {
+                display: block;
+            }
+
+            div
+            {
+                margin-top: 1em;
+            }
+
+            input
+            {
+                border-radius: 5px;
+                box-shadow: 1px 1px 1px white;
+            }
+
+            /*input [text], input [tel], input [password]
+            {
+                border-radius: 2px;
+            }*/
+
+            #button
+            {
+                color: grey;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Formulaire</h1>
+        <form method="POST" action="#">
+            <div>
+                <label for="nom">Veuillez saisir votre nom :</label> 
+                <input type="text" name="nom" id="nom" required placeholder="nom" size="23"> 
+            </div>
+            <div>
+                <label for="prenom">Veuillez saisir votre prénom :</label> 
+                <input type="text" name="prenom" id="prenom" required placeholder="prénom" size="23" > 
+            </div>
+            <div>
+                <label for="adresse">Veuillez saisir votre adresse :</label> 
+                <input type="text" name="adresse" id="adresse" required placeholder="adresse" size="23"> 
+            </div>
+            <div>
+                <label for="tel">Veuillez saisir votre numéro de téléphone :</label>  
+                <input type="tel" name="tel" id="tel" required placeholder="téléphone" size="23" > 
+            </div>
+            <div>
+                <label for="pass">Veuillez saisir votre mot de passe :</label> 
+                <input type="password" name="pass" id="pass" required placeholder="Password" size="23"> 
+            </div>
+            <div>
+                <input id="button" type="submit" value="Envoyer">
+            </div>    
+        </form>
+    </body>
+</html>
